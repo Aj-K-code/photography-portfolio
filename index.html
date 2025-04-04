@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artful Lens Photography</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="camera-icon">
+                <i class="fas fa-camera"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Animation -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo" data-aos="fade-right" data-aos-delay="200">
+                    <a href="#hero">Artful Lens</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li data-aos="fade-down" data-aos-delay="300"><a href="#hero" class="nav-link">Home</a></li>
+                    <li data-aos="fade-down" data-aos-delay="400"><a href="#about" class="nav-link">About</a></li>
+                    <li data-aos="fade-down" data-aos-delay="500"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li data-aos="fade-down" data-aos-delay="600"><a href="#services" class="nav-link">Services</a></li>
+                    <li data-aos="fade-down" data-aos-delay="700"><a href="#calendar" class="nav-link">Book</a></li>
+                    <li data-aos="fade-down" data-aos-delay="800"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="split-text" data-aos="fade-up" data-aos-delay="300">Capturing Life's Beautiful&nbsp;Moments</h1>
+                <p data-aos="fade-up" data-aos-delay="500">Professional photography services for events, portraits, and commercial shoots</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="700">
+                    <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                    <a href="#calendar" class="btn btn-outline">Book a Session</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-images">
+            <div class="hero-image" style="background-image: url('https://picsum.photos/1200/800?random=1')" data-tilt></div>
+            <div class="hero-image" style="background-image: url('https://picsum.photos/1200/800?random=2')" data-tilt></div>
+            <div class="hero-image" style="background-image: url('https://picsum.photos/1200/800?random=3')" data-tilt></div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div>
+                <span class="scroll-arrow">
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-heading">
+                <h6 data-aos="fade-up">About Me</h6>
+                <h2 data-aos="fade-up" data-aos-delay="200" class="split-text">The Artist Behind the Lens</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right" data-aos-delay="300">
+                    <img src="https://picsum.photos/600/800?random=10" alt="Photographer" data-tilt>
+                    <div class="experience-badge" data-aos="zoom-in" data-aos-delay="600">
+                        <span class="counter">10</span>
+                        <span>Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-text" data-aos="fade-left" data-aos-delay="400">
+                    <p>Welcome to my world of photography. I'm passionate about capturing the essence of life's most precious moments. With a keen eye for detail and a creative approach, I transform ordinary scenes into extraordinary memories.</p>
+                    <p>Photography is not just my profession; it's my way of connecting with people and telling their unique stories through visual art. Every click of my camera is driven by the desire to create timeless images that evoke emotions and preserve memories.</p>
+                    <div class="signature" data-aos="fade-up" data-aos-delay="500">
+                        <span class="signature-text">Alex Johnson</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="600"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="700"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="800"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="900"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-heading light">
+                <h6 data-aos="fade-up">Portfolio</h6>
+                <h2 data-aos="fade-up" data-aos-delay="200" class="split-text">My Latest Work</h2>
+            </div>
+            <div class="portfolio-filter" data-aos="fade-up" data-aos-delay="400">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="portrait">Portraits</button>
+                <button class="filter-btn" data-filter="wedding">Weddings</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+            <div class="portfolio-grid" data-aos="fade-up" data-aos-delay="600">
+                <div class="portfolio-item" data-category="portrait">
+                    <div class="portfolio-img">
+                        <img src="https://picsum.photos/600/800?random=4" alt="Portrait">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Elegant Portrait</h4>
+                        <p>Portrait Photography</p>
+                        <a href="https://picsum.photos/1200/800?random=4" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-img">
+                        <img src="https://picsum.photos/600/800?random=5" alt="Wedding">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Wedding Bliss</h4>
+                        <p>Wedding Photography</p>
+                        <a href="https://picsum.photos/1200/800?random=5" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="nature">
+                    <div class="portfolio-img">
+                        <img src="https://picsum.photos/600/800?random=6" alt="Nature">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Serene Landscape</h4>
+                        <p>Nature Photography</p>
+                        <a href="https://picsum.photos/1200/800?random=6" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="commercial">
+                    <div class="portfolio-img">
+                        <img src="https://picsum.photos/600/800?random=7" alt="Commercial">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Product Showcase</h4>
+                        <p>Commercial Photography</p>
+                        <a href="https://picsum.photos/1200/800?random=7" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="portrait">
+                    <div class="portfolio-img">
+                        <img src="https://picsum.photos/600/800?random=8" alt="Portrait">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Fashion Portrait</h4>
+                        <p>Portrait Photography</p>
+                        <a href="https://picsum.photos/1200/800?random=8" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="wedding">
+                    <div class="portfolio-img">
+                        <img src="https://picsum.photos/600/800?random=9" alt="Wedding">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Wedding Ceremony</h4>
+                        <p>Wedding Photography</p>
+                        <a href="https://picsum.photos/1200/800?random=9" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-more" data-aos="fade-up" data-aos-delay="800">
+                <a href="#" class="btn btn-primary">Load More Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-heading">
+                <h6 data-aos="fade-up">Services</h6>
+                <h2 data-aos="fade-up" data-aos-delay="200" class="split-text">What I Offer</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-portrait"></i>
+                    </div>
+                    <h3>Portrait Sessions</h3>
+                    <p>Professional portrait photography for individuals, couples, and families. I capture authentic moments that reflect your unique personality.</p>
+                    <div class="service-price">
+                        <span>From $200</span>
+                    </div>
+                    <a href="#calendar" class="btn btn-outline">Book Now</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Wedding Photography</h3>
+                    <p>Complete wedding day coverage, capturing every special moment from preparation to reception. Custom packages available.</p>
+                    <div class="service-price">
+                        <span>From $1,500</span>
+                    </div>
+                    <a href="#calendar" class="btn btn-outline">Book Now</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial Work</h3>
+                    <p>Professional product and commercial photography for businesses. Elevate your brand with high-quality visuals.</p>
+                    <div class="service-price">
+                        <span>From $500</span>
+                    </div>
+                    <a href="#calendar" class="btn btn-outline">Book Now</a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600" data-tilt>
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Event Coverage</h3>
+                    <p>Comprehensive coverage for special events, graduations, corporate functions, and more.</p>
+                    <div class="service-price">
+                        <span>From $350</span>
+                    </div>
+                    <a href="#calendar" class="btn btn-outline">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-heading light">
+                <h6 data-aos="fade-up">Testimonials</h6>
+                <h2 data-aos="fade-up" data-aos-delay="200" class="split-text">What Clients Say</h2>
+            </div>
+            <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="400">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Our wedding photos are absolutely stunning! The photographer captured every special moment and the emotions of our day perfectly. We couldn't be happier with the results.</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/100/100?random=11" alt="Client">
+                            <div class="author-info">
+                                <h5>Sarah & Michael</h5>
+                                <span>Wedding Clients</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>The family portraits exceeded our expectations! The photographer made everyone feel comfortable, even our shy toddler. The photos truly captured our family's personality.</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/100/100?random=12" alt="Client">
+                            <div class="author-info">
+                                <h5>The Johnsons</h5>
+                                <span>Family Session</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="testimonial-quote">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>The product photos for our online store are absolutely perfect. The attention to detail and lighting really make our products stand out. Our sales have increased significantly!</p>
+                        <div class="testimonial-author">
+                            <img src="https://picsum.photos/100/100?random=13" alt="Client">
+                            <div class="author-info">
+                                <h5>Emily Thomas</h5>
+                                <span>Business Owner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls" data-aos="fade-up" data-aos-delay="600">
+                <button class="testimonial-prev"><i class="fas fa-arrow-left"></i></button>
+                <button class="testimonial-next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="calendar-section">
+        <div class="container">
+            <div class="section-heading">
+                <h6 data-aos="fade-up">Availability</h6>
+                <h2 data-aos="fade-up" data-aos-delay="200" class="split-text">Book Your Session</h2>
+            </div>
+            <div class="calendar-content">
+                <div class="calendar-container" data-aos="fade-right" data-aos-delay="400">
+                    <div id="booking-calendar"></div>
+                </div>
+                <div class="booking-form" data-aos="fade-left" data-aos-delay="500">
+                    <h3>Request a Booking</h3>
+                    <form id="booking-form" action="https://formspree.io/f/xqapyyvq" method="POST">
+                        <input type="hidden" name="_subject" value="New Booking Request from Photography Website">
+                        <input type="hidden" name="_replyto" value="bobajaj@gmail.com">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Type</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="commercial">Commercial Work</option>
+                                <option value="event">Event Coverage</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="text" id="date" name="date" readonly required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select a time</option>
+                                <option value="morning">Morning (9AM - 12PM)</option>
+                                <option value="afternoon">Afternoon (1PM - 4PM)</option>
+                                <option value="evening">Evening (5PM - 8PM)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Additional Information</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h6 data-aos="fade-up">Get in Touch</h6>
+                <h2 data-aos="fade-up" data-aos-delay="200" class="split-text">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="400">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Studio Location</h4>
+                            <p>123 Photography Lane, Cityville, ST 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>info@artfullens.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>(123) 456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Friday: 9AM - 6PM<br>Saturday: 10AM - 4PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links large">
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="600"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="700"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="800"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-aos="fade-up" data-aos-delay="900"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="quote-form" data-aos="fade-left" data-aos-delay="500">
+                    <h3>Request a Quote</h3>
+                    <form id="quote-form" action="https://formspree.io/f/xqapyyvq" method="POST">
+                        <input type="hidden" name="_subject" value="New Quote Request from Photography Website">
+                        <input type="hidden" name="_replyto" value="bobajaj@gmail.com">
+                        <div class="form-group">
+                            <label for="quote-name">Name</label>
+                            <input type="text" id="quote-name" name="quote-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-email">Email</label>
+                            <input type="email" id="quote-email" name="quote-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-service">Service</label>
+                            <select id="quote-service" name="quote-service" required>
+                                <option value="">Select a service</option>
+                                <option value="portrait">Portrait Session</option>
+                                <option value="wedding">Wedding Photography</option>
+                                <option value="commercial">Commercial Work</option>
+                                <option value="event">Event Coverage</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="quote-message">Project Details</label>
+                            <textarea id="quote-message" name="quote-message" rows="4" required></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                        <button type="submit" class="btn btn-primary">Request Quote</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#hero">Artful Lens</a>
+                    <p>Capturing life's beautiful moments with artistic vision and professional expertise.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#calendar">Book</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Newsletter</h4>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Artful Lens Photography. All rights reserved.</p>
+                <div class="footer-policies">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <button class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    </footer>
+
+    <!-- Lightbox for Portfolio Images -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="Lightbox Image">
+            <div class="lightbox-close"><i class="fas fa-times"></i></div>
+            <div class="lightbox-controls">
+                <button class="lightbox-prev"><i class="fas fa-arrow-left"></i></button>
+                <button class="lightbox-next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message Modal -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Success!</h3>
+                <div class="modal-close"><i class="fas fa-times"></i></div>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p>Your message has been sent successfully. I'll get back to you as soon as possible!</p>
+                <button class="btn btn-primary modal-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.0/dist/vanilla-tilt.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
